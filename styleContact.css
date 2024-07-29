@@ -1,0 +1,306 @@
+
+body{
+    background-image: url(ImagenesPortafolio/fondos/fondoDePantalla17.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:sans-serif;
+}
+
+header {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Posiciona el encabezado permanente */
+    top: 0; /* Alinea el encabezado en la parte superior de la página */
+    left: 0; /* Alinea el encabezado en la parte izquierda de la página */
+    width: 100%; /* Establece el ancho del encabezado al 100% del viewport */
+    z-index: 1; /* Asegura que el encabezado esté sobre la imagen de fondo */
+    transition: background-color 0.3, color 0.3s;
+
+}
+header.scrolled{
+    background-color: rgb(255, 255, 255);
+    color: rgb(91, 92, 92);
+}
+
+header h2 {
+    margin: 0;
+    font-size: 20px;
+    justify-content: start;
+}
+header nav{
+    display: flex;
+    margin-left: auto;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-weight: bold;
+    display:flex;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 3px solid transparent;
+    font-size: 16px;
+}
+header a:hover{
+    color:  rgb(52, 52, 222);
+    border-bottom: 3px solid  rgb(52, 52, 222);
+}
+header.scrolled a {
+    color: rgb(111, 113, 113);
+}
+header.scrolled a:hover {
+    color:  rgb(52, 52, 222);
+}
+
+.contact-section h1 {
+    color: #fff;
+    font-size: 2.5em;
+
+}
+
+.contact-section h1 span {
+    color:  rgb(48, 48, 168);
+}
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0 5%;
+}
+
+.contact-info {
+    max-width: 45%;
+    padding: 2%;
+}
+
+.contact-info h2 {
+    color: #f4a721;
+    font-size: 2em;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.contact-form {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border: 2px solid #3733f8;
+    border-radius: 10px;
+    width: 85%;
+    max-height: 85%;
+    margin-top: 5%;
+    color: aliceblue;
+
+}
+
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #3733f8;;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: rgb(10, 10, 130);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.558);
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #6a6967;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+}
+#txtIntro {
+    color: aliceblue;
+    font-size: 20px;
+}
+#txtCiudad{
+    color: aliceblue;
+    font-size: 20px;
+}
+#txtNumero{
+    color: aliceblue;
+    font-size: 20px;
+}
+#txtCorreo{
+    color: aliceblue;
+    font-size: 20px;
+}
+#name{
+    
+}
+
+#imgLocation {
+    width: 4%;
+    height: 4%;
+    border-radius: 35px;
+}
+#imgTelephon{
+    width: 5%;
+    height: 5%;
+    border-radius: 35px;
+}
+#imgCorreo{
+    width: 5%;
+    height: 5%;
+    border-radius: 15px;
+}
+
+/*Configuration Footer */
+
+footer {
+    background-color: #000;
+    padding: 20px 50px;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    font-family: sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+
+
+/*Configuration of Footer-Left */
+.footer-left h2 {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 23px;
+}
+#txtLet {
+    color:blue;
+}
+/*Configuration Button Middle */
+
+.footer-middle button {
+    padding: 30px 40px;
+    color: aliceblue; 
+    border: 2px solid rgba(255, 255, 255, 0.558);
+    padding:  10px 10px;
+    background-color: rgb(10, 10, 130);
+    border-radius: 5px;
+    width: 200px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.footer-middle button:hover{
+    background-color:  rgb(0, 0, 0);
+}
+
+
+/* Configuracion de Footer-Right */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+.txtItem{
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border: 5px solid aliceblue;
+    border-radius: 20px;
+}
+
+.contact-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item p {
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(126, 128, 128);
+}
+
+.contact-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/*Configuration Footer-bottom */
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom hr {
+    margin: 10px 0;
+}
+

@@ -1,0 +1,570 @@
+/* Estilos para el header */
+
+body{
+    background-image: url(ImagenesPortafolio/fondos/fondoDePantalla15.jpg);
+    margin: 0;
+    font-family:sans-serif;
+}
+
+header {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Posiciona el encabezado permanente */
+    top: 0; /* Alinea el encabezado en la parte superior de la página */
+    left: 0; /* Alinea el encabezado en la parte izquierda de la página */
+    width: 100%; /* Establece el ancho del encabezado al 100% del viewport */
+    z-index: 1; /* Asegura que el encabezado esté sobre la imagen de fondo */
+    transition: background-color 0.3, color 0.3s;
+    font-family:sans-serif;
+}
+
+header.scrolled{
+    background-color: rgb(255, 255, 255);
+    color: rgb(91, 92, 92);
+}
+
+
+header nav{
+    display: flex;
+    margin-left: auto;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-weight: bold;
+    display:flex;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 3px solid transparent;
+    font-size: 16px;
+}
+header a:hover{
+    color:  rgb(52, 52, 222);
+    border-bottom: 3px solid  rgb(52, 52, 222);
+}
+header.scrolled a {
+    color: rgb(111, 113, 113);
+}
+header.scrolled a:hover {
+    color:  rgb(52, 52, 222);
+}
+/*Title Sectiion */
+
+.divTitle{
+    text-align: center;
+}
+#title-myProyects{
+    color: whitesmoke;
+    font-size: 45px;
+    margin: 5%;
+    
+}
+
+/*BuildPro SECTION */
+
+/*BuildPro Img*/
+/* Slider Container */
+.divImgBuildPro {
+    position: relative;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+}
+
+.divSlider {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Slider */
+.sliderBuildPro {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.sliderBuildPro img {
+    width: 100%; /* Ajusta según sea necesario */
+    flex-shrink: 0;
+    
+    object-fit: cover;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*Configuration Text buildPro */ 
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.divTextBuildPro{
+    flex: 2;
+    text-align: center;
+    padding-left: 20px;
+}
+.divTextBuildPro h3{
+    margin-top: 0;
+    color: aliceblue;
+    font-size: 45px;
+}
+.divTextBuildPro p{
+    text-align: justify;
+    color: aliceblue;
+    font-size: 18px;
+}
+/*ImgIcono Section */
+.divimgIconoBuildpro img{
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 2%;
+    border-radius: 20px;
+}
+
+
+
+
+/*Hr configuration */
+.hr1{
+    margin: 20px 20px; 
+}
+
+
+
+
+
+/* MusicLife Section */
+
+/* Slider Container */
+.divImgMusicLife {
+    position: relative;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.divImgMusicLife {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.divSliderMusicLife{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Slider MusicLife*/
+.sliderMusicLife {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap
+}
+
+.sliderMusicLife img {
+    width: 100%; /* Ajusta según sea necesario */
+    flex-shrink: 0;
+    
+    object-fit: cover; /* Mantiene la relación de aspecto */
+    
+}
+
+/* Navigation Buttons */
+.prevMusicLife, .nextMusicLife {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    font-size: 24px;
+}
+
+.prevMusicLife {
+    left: 10px;
+}
+
+.nextMusicLife {
+    right: 10px;
+}
+
+
+
+
+.contentMusicLife {
+    display: flex;
+    justify-content: center; /* Centra el contenido del contenedor principal horizontalmente */
+    align-items: center; /* Centra el contenido del contenedor principal verticalmente */
+    padding: 40px;
+}
+
+
+.divTextMusicLife {
+    flex: 1; /* Ajusta el tamaño del texto para que ocupe su espacio correspondiente */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido del texto verticalmente */
+    align-items: center;
+}
+
+.divTextMusicLife h3 {
+    margin-top: 0;
+    color: aliceblue;
+    font-size: 45px;
+}
+
+.divTextMusicLife p {
+    text-align: justify;
+    color: aliceblue;
+    font-size: 18px;
+    padding-right: 5%;
+    width: 100%; /* Asegúrate de que el texto ocupe todo el ancho disponible */
+}
+
+.divimgIconMusicLife {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    margin: 20px 0; /* Espacio superior e inferior para los iconos */
+}
+
+.divimgIconMusicLife img {
+    width: 60px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10%;
+    border-radius: 20px;
+}
+
+.divBtnMusicLife {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 20px;
+}
+
+.divBtnMusicLife button {
+    background: none; /* Elimina el fondo predeterminado del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 0 30px; /* Espacio entre los botones */
+}
+
+.divBtnMusicLife img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* secPortfolio Section */
+/* secPortfolio Section */
+
+/* Slider Container */
+.divImgPortfolio {
+    position: relative;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+/* Slider Wrapper */
+.divSliderPortfolio {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Slider Portfolio */
+.sliderImgPortfolio {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.sliderImgPortfolio img {
+    width: 100%; /* Ajusta según sea necesario */
+    flex-shrink: 0;
+    object-fit: cover; /* Mantiene la relación de aspecto */
+}
+
+/* Navigation Buttons */
+.btnPrev_PF, .btnNext_PF {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    font-size: 24px;
+}
+
+.btnPrev_PF {
+    left: 10px;
+}
+
+.btnNext_PF {
+    right: 10px;
+}
+
+/* Text Content Portfolio */
+.secPortfolio {
+    display: flex;
+    justify-content: center; /* Centra el contenido del contenedor principal horizontalmente */
+    align-items: center; /* Centra el contenido del contenedor principal verticalmente */
+    padding: 40px;
+    gap: 20px; /* Espacio entre el texto y las imágenes */
+}
+
+.divTextPortfolio {
+    flex: 1; /* Ajusta el tamaño del texto para que ocupe su espacio correspondiente */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido del texto verticalmente */
+    align-items: center;
+}
+
+.divTextPortfolio h3 {
+    margin-top: 0;
+    color: aliceblue;
+    font-size: 45px;
+}
+
+.divTextPortfolio p {
+    text-align: justify;
+    color: aliceblue;
+    font-size: 18px;
+    padding-right: 5%;
+    width: 100%; /* Asegúrate de que el texto ocupe todo el ancho disponible */
+}
+
+.divimgIconPortfolio {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    margin: 20px 0; /* Espacio superior e inferior para los iconos */
+}
+
+.divimgIconPortfolio img {
+    width: 60px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10%;
+    border-radius: 20px;
+}
+
+.divBtnPortfolio {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 20px;
+}
+
+.divBtnPortfolio button {
+    background: none; /* Elimina el fondo predeterminado del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 0 30px; /* Espacio entre los botones */
+}
+
+.divBtnPortfolio img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+/*ImgIcono Section */
+.divimgIconPortfolio img{
+    width: 60px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 2%;
+    border-radius: 20px;
+}
+
+/*Button Section */
+.divBtn{
+    display: flex;
+    justify-content: center;
+}
+.btnGitHub, .btnDownload{
+    width: 15%;
+    background-color: #000;
+    margin: 2%;
+    transition: background-color 0.03s ease;
+    border-radius: 5px;
+    
+}
+
+.btnGitHub img, .btnDownload img{
+    width: 80%;
+
+}
+.btnGitHub:hover, .btnDownload:hover{
+    background-color: grey;
+}
+
+
+
+
+
+/*Configuration Footer */
+
+footer {
+    background-color: #000;
+    padding: 20px 50px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+
+/*Configuration of Footer-Left */
+.footer-left h2 {
+    margin: 0;
+    font-size: 23px;
+    font-family: sans-serif;
+}
+#txtLet {
+    color:blue;
+}
+/*Configuration Button Middle */
+
+.footer-middle button {
+    padding: 30px 40px;
+    color: aliceblue; 
+    border: 2px solid rgba(255, 255, 255, 0.558);
+    padding:  10px 10px;
+    background-color: rgb(10, 10, 130);
+    border-radius: 5px;
+    width: 200px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.footer-middle button:hover{
+    background-color:  rgb(0, 0, 0);
+}
+
+
+/* Configuracion de Footer-Right */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+.txtItem{
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border: 5px solid aliceblue;
+    border-radius: 20px;
+}
+
+.contact-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item p {
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(126, 128, 128);
+}
+
+.contact-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/*Configuration Footer-bottom */
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom hr {
+    margin: 10px 0;
+}
